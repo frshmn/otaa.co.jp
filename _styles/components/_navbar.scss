@@ -1,0 +1,48 @@
+@use '../base' as *;
+
+.store-navigation {
+    display: flex;
+    flex-direction: column;
+}
+.store-navigation__title {
+    text-align: center;
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 10px;
+    h2 {
+        font-weight: bold;
+        font-size: 14px;
+        color: $primary-color;
+    }
+}
+.store-navigation__content {
+    display: flex;
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: bold;
+    ul {
+        padding: 10px 30px;
+        border-left: 1px solid $secondary-color;
+        &:last-child {
+            border-right: 1px solid $secondary-color;
+        }
+    }
+}
+
+.accordion-menu {
+    display: flex;
+}
+
+.accordion-menu__title {
+    cursor: pointer;
+}
+
+.accordion-menu__content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #dddddd;
+    border: none;
+}

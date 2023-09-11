@@ -1,0 +1,16 @@
+@use '../base' as *;
+
+.c-headline {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $primary-color;
+    color: $primary-color;
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

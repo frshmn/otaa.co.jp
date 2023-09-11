@@ -1,0 +1,97 @@
+@use '../base' as *;
+
+#masthead {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+
+.masthead__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 0;
+  @include respond-from(sm) {
+    padding: 0;
+  }
+}
+
+.masthead__logo {
+  img {
+    max-width: 70px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+//  .masthead__logo =============================
+
+.masthead__work {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+  will-change: opacity;
+  a:nth-child(1) {
+    @include respond-from(sm) {
+      display: none;
+    }
+  }
+  a:nth-child(2) {
+    @include respond-from(sm) {
+      display: block;
+      padding: 5px;
+      margin: 15px;
+      border: 1px solid $base-color;
+    }
+  }
+}
+
+.masthead__work-title {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.masthead__work-icon {
+  margin: 0 20px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  position: relative;
+  backface-visibility: hidden;
+  @include respond-from(sm) {
+    margin: 0;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $base-color;
+    @include respond-from(sm) {
+      // fill: #ffffff;
+    }
+  }
+}
+//  .masthead__work =============================
+
+.masthead__navigation {
+  ul {
+    display: flex;
+  }
+  ul li {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    @include respond-from(sm) {
+      padding: 0;
+      padding-left: 15px;
+      font-weight: 400;
+    }
+  }
+}
+//  ==================================================
+//  End Masthead section
+//  ==================================================
+

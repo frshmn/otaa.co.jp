@@ -1,0 +1,53 @@
+
+// Media query Mixin
+$breakpoints: (
+    "sm": 480px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1200px
+);
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+    } @else {
+    @error "Invalid breakpoint: #{$breakpoint}.";
+    }
+}
+
+@mixin respond-from($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+    } @else {
+    @error "Invalid breakpoint: #{$breakpoint}.";
+    }
+}
+
+//Flexbox Mixin
+@mixin flexbox($justify: null, $align: null, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//Border Radius Mixin
+@mixin border-radius($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+//Box Shadow Mixin
+@mixin box-shadow($x: 0, $y: 0, $blur: 0, $color: #000) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+
+

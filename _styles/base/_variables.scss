@@ -1,0 +1,33 @@
+/* Color palette*/
+$primary-color: #ea5514;
+$secondary-color: #f8b62d;
+$success-color: #ccffcc;
+$danger-color: #b03d04;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$base-color: #1c1819;
+
+/* Font size */
+$small-font-size: 14px;
+$medium-font-size: 16px;
+$large-font-size: 18px;
+
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+$sans-serif-font: 'M PLUS 1p', sans-serif;
+$serif-font: Georgia, 'Times New Roman', serif;
+$monospace-font: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+/* Spacing (margin and padding)*/
+$small-padding: 8px;
+$medium-padding: 16px;
+$large-padding: 24px;
+
+$small-margin: 8px;
+$medium-margin: 16px;
+$large-margin: 24px;
+
+/* Layered */
+$zindex-header: 100;
+$zindex-modal: 200;
+$zindex-dropdown: 300;

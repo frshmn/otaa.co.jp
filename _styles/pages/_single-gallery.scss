@@ -1,0 +1,223 @@
+@use '../base' as *;
+
+main.gallery-content {
+    // max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+.gallery-item__header {
+    background: $primary-color;
+    margin: 50px auto 30px auto;
+    padding: 15px 0;
+    h1 {
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+}
+
+.gallery-item__content {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+
+.gallery-item__content-hero {
+    width: 100%;
+    height: 70vh;
+    padding: 0 30px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.gallery-item__content-information {
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 14px;
+        border: 2px solid #dddddd;
+        border-bottom: none;
+    }
+    dt {
+        width: 15%;
+        background-color: #efefef;
+        padding: 10px 15px;
+        font-weight: 500;
+        border-bottom: 2px solid #dddddd;
+    }
+    dd {
+        width: 35%;
+        padding: 10px 15px;
+        font-weight: 400;
+        border-bottom: 2px solid #dddddd;
+        span {display: inline-block;}
+    }
+}
+
+
+
+.slider-infinite {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    @include respond-to(md) {
+        padding-top: 60px;
+    }
+    @include respond-to(sm) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+.slider-infinite .gallery-pagination {
+    height: 2px;
+    top: inherit;
+    bottom: -10px; right: 0;
+    max-width: 1300px;
+    margin: auto;
+    span.swiper-pagination-progressbar-fill {
+        background-color: #dddddd;
+    }
+    @include respond-to(md) {
+        max-width: 700px;
+    }
+    @include respond-to(sm) {
+        width: 85%;
+        height: 1px;
+        bottom: -25px;
+    }
+}
+.slider-infinite .gallery-button-next, .gallery-button-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(#dddddd, .5);
+    z-index: 100;
+    display: none;
+    @include respond-to(xl) {
+        width: 80px;
+    }
+    @include respond-to(sm) {
+        width: 25px;
+        background-color: rgba(#dddddd, .5);
+    }
+}
+.slider-infinite .gallery-button-next {
+    right: 0;
+}
+.slider-infinite .gallery-button-prev {
+    left: 0;
+}
+
+.slider__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 100px;
+    @include respond-to(sm) {
+        position: relative;
+    }
+}
+
+.slider {
+    align-items: center;
+    transition-timing-function: linear!important;
+    &:hover .slide:not(:hover) {
+        opacity: .3;
+    }
+}
+.slider__item {
+    width: max-content;
+    .slide {
+        width: 360px;
+        transition: .8s cubic-bezier(.2, 1, .2, 1);
+    }
+    .slide__media {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}
+// End .gallery
+//=====================================================
+
+.lum-lightbox {
+    background: rgba(0,0,0,.9);
+    &.lum-open {
+        z-index: 10001;
+    }
+    .lum-lightbox-image-wrapper {
+        padding: 20px 0;
+    }
+    .lum-lightbox-caption {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+@include respond-to(sm) {
+    .lum-lightbox-inner img {
+        max-width: 160vw !important;  /* 軽くスワイプで左端から右端まで動かせる量 */
+        max-height: 85vh !important;  /* 上下に適度に余白 */
+    }
+}
+
+.gallery-item__content-explain {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-top: 2px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
+    padding: 20px 30px;
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 15px auto;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: .8px;
+        line-height: 1.6;
+        margin: 5px auto;
+    }
+    div.wp-caption {
+        margin: 15px auto;
+    }
+    div.wp-caption p {
+        font-size: 12px;
+        color: #666666;
+        margin-top: 5px;
+    }
+    
+}
+
+.gallery-content__search {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.gallery-item__footer {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}

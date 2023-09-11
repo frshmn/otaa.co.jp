@@ -1,0 +1,21 @@
+
+/* base */
+//フォント、色、グローバル変数、タイポグラフィなどの基本的なスタイル定義
+@use '../node_modules/destyle.css/destyle.css';
+@use 'base';
+
+/* components */
+//ボタン、ナビゲーションバーなどの再利用可能なUIコンポーネントのスタイル
+@use 'components';
+
+/* layout */
+//ヘッダー、フッターなどのページのレイアウトを定義するスタイル
+@use 'layout';
+
+/* pages */
+//各ページに固有のスタイルを定義するスタイル
+@use 'pages';
+
+/* themes */
+//テーマのスタイル
+@use 'themes';

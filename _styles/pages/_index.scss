@@ -1,0 +1,9 @@
+/* pages */
+//各ページに固有のスタイルを定義するスタイル
+@forward 'home';
+@forward 'common';
+@forward 'work';
+@forward 'about';
+@forward 'news';
+@forward 'archive-gallery';
+@forward 'single-gallery';

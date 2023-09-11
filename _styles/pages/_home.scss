@@ -1,0 +1,84 @@
+@use "../base" as *;
+
+.p-front {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    section { 
+        margin-bottom: 100px;
+    }
+}
+
+// Hero Section
+.p-front__hero {
+    height: 80vh;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        color: #ffffff;
+        background-color: $primary-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        &::after {
+            font-size: 18px;
+        }
+    }
+}
+
+.p-front__hero-slider {
+    width: 100%;
+    height: 80%;
+}
+
+.p-front__hero-thumbs {
+    width: 100%;
+    height: 20%;
+    margin: 15px auto;
+}
+
+// Wrapper Section fro Main and Side
+.p-front__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+//  Main Section
+main.p-front__main {
+    width: 80%;
+}
+
+//  Main > Listing Category Section
+.p-front__main-listCat {
+    width: 100%;
+}
+
+// Main > Access Ranking Section
+.p-front__main-ranking {
+
+}
+
+// Side Section
+aside.p-front__side {
+    width: 30%;
+}
+
+.p-front__side-banner {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+

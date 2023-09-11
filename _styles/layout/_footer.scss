@@ -1,0 +1,17 @@
+@use '../base' as *;
+#colophon {
+    display: none;
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    .copyright {
+        width: 100%;
+        color: $base-color;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+//  ==================================================
+//  End Colophon section
+//  ==================================================
+

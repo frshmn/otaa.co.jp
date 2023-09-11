@@ -1,0 +1,50 @@
+@use "../base" as *;
+
+body {
+    position: relative;
+    font-family: $sans-serif-font;
+}
+
+#page {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, small, input, label, dt, dd, figcaption {
+    display: block;
+    transform: rotate(0.03deg);
+}
+
+.page {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+
+.page__content {
+    margin: 50px auto;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+}
+.page__content-small {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.page__filter {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    z-index: 1000;
+}

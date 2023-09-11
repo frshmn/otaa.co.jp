@@ -1,0 +1,87 @@
+@use '../base' as *;
+
+.searchform-word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    label {
+        padding: 10px;
+        padding-right: 0;
+    }
+    input::placeholder {
+        color: $primary-color;
+    }
+    button {
+        padding: 10px;
+        border-left: 1px solid $primary-color;
+        background-color: $primary-color;
+        border-radius: 0 5px 5px 0;
+        color: #ffffff;
+    }
+}
+.searchform-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px 0;
+    margin: 10px;
+    padding-bottom: 30px;
+    border: 3px solid $primary-color;
+    border-radius: 15px;
+    h2 {
+        color: #ffffff;
+        background-color: $primary-color;
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+        margin-top: -4px;
+    }
+    h3 {
+        margin-bottom: 8px;
+        &::before {
+            content: '';
+            width: 4px;
+            height: 100%;
+            background-color: $primary-color;
+            position: absolute;
+            left: -10px;
+        }
+    }
+}
+
+.searchform-gallery__freeword {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    input {
+        background-color: #dddddd;
+        border-radius: 5px;
+        padding: 8px 15px;
+
+    }
+}
+
+.searchform-gallery__category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 30px;
+    justify-content: center;
+}
+
+.searchform-gallery__submit {
+    display: flex;
+    justify-content: center;
+    input[type=submit] {
+        background-color: $primary-color;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 15px 20px;
+        min-width: 150px;
+        font-size: 14px;
+        text-align: center;
+    }
+}

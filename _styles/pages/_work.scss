@@ -1,0 +1,79 @@
+@use "../base" as *;
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.work-list__item {
+    width: 31%;
+    .image {
+        img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+    }
+    .title {
+        opacity: 1;
+        position: absolute;
+        top: 0; right: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 10px 0;
+        writing-mode: vertical-rl;
+        z-index: -1;
+        @include respond-to(sm) {
+            animation: fadeInLeftToRight-out 1s;
+            animation-fill-mode: forwards;
+            right: 25px;
+            opacity: 0;
+        }
+        h2 {
+            margin: 0;
+            font-size: 14px;
+            display: inline-block;
+        }
+        p {
+            margin: 0;
+            font-size: 14px;
+            display: inline-block
+        }
+    }
+}
+.work-list__itemWrapper {
+    position:relative;
+    padding-right: 20px;
+    &:hover, &:focus {
+        .title {
+            animation: fadeInLeftToRight 1s;
+            animation-fill-mode: forwards;  
+        }
+        
+    }
+}
+
+@keyframes fadeInLeftToRight {
+    0% {
+        opacity: 0;
+        right: 25px;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+@keyframes fadeInLeftToRight-out {
+    0% {
+        opacity: 1;
+        right: 0;
+    }
+    100% {
+        opacity: 0;
+        right: 25px;
+    }
+}
