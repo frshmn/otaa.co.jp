@@ -53,7 +53,7 @@ get_header();
 						OTATAの役割はアクリルパイプで出来たイグルーのデザインと施工方法の検討であった。<br>
 						多面体のイグルーを実現するため、Grasshopperで検討用のツールを作成し寸法管理を行い,ジョイントのデザインを行った。
 					</p>
-					<a href="<?php echo home_url('projects/bna/'); ?>">View Project</a>
+					<a href="<?php echo home_url('work/bna/'); ?>">View Project</a>
 				</div>
 			</div>
 			<p class="project__content-label">01</p>
@@ -89,7 +89,7 @@ get_header();
 						OTATAの役割はアクリルパイプで出来たイグルーのデザインと施工方法の検討であった。<br>
 						多面体のイグルーを実現するため、Grasshopperで検討用のツールを作成し寸法管理を行い,ジョイントのデザインを行った。
 					</p>
-					<a href="<?php echo home_url('projects/901-鋼板/'); ?>">View Project</a>
+					<a href="<?php echo home_url('work/901-鋼板/'); ?>">View Project</a>
 				</div>
 			</div>
 			<p class="project__content-label">02</p>
