@@ -31,6 +31,7 @@ $site = array(
 </head>
 
 <body <?php body_class(); ?>>
+<div class="cursor"></div>
 <?php wp_body_open(); ?>
 <div id="page" class="<?php echo $site['slug']; ?>">
 	<div id="masthead" class="masthead">
