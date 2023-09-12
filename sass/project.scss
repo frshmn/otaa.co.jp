@@ -1,0 +1,169 @@
+//compileCompressed: ../assets/css/$1.min.css
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap');
+@import 'foundation/_valiables.scss';
+/*********************************************************
+	99.	END GLOBAL.SCSS
+**********************************************************/
+#masthead {
+  transition: .5s;
+  opacity: 1;
+  &.hide {
+    opacity: 0;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.sub-navigation {
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.project .hero {
+  height: 100vh;
+  &__inner {
+    height: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+.project .content {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 150px 0;
+  text-align: center;
+  @include mq(sm) {
+    padding: 48px 0;
+  }
+  p {
+    font-family: 'Noto Serif JP', serif;
+    text-align: left;
+  }
+  .col {
+    &__1 {
+      flex: 1;
+    }
+    &__2 {
+      flex: 2;
+    }
+  }
+  &__block {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 150px;
+    margin: auto;
+    @include mq(sm) {
+      padding-bottom: 80px;
+    }
+    &:last-child {
+      padding: 0;
+    }
+  }
+  &__block-inner {
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq(sm) {
+      flex-direction: column;
+    }
+    &.full {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__block-image {
+    position: relative;
+    img {
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__block-text {
+    position: relative;
+    margin: auto 100px;
+    @include mq(sm) {
+      margin: auto 20px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      @include mq(sm) {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 2;
+      @include mq(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//===========================
+//  each project
+//===========================
+.content {
+  &.bna {
+    #block-1 {
+      img {
+        height: 70vh;
+        @include mq(sm) {
+          height: auto;
+        }
+      }
+    }
+    #block-2 {
+      img {
+        height: 100vh;
+        @include mq(sm) {
+          height: auto;
+        }
+      }
+      .content__block-text {
+        order: 2;
+      }
+    }
+    #block-3 {
+      img {
+        height: 80vh;
+        @include mq(sm) {
+          height: auto;
+        }
+      }
+    }
+    #block-5 {
+      img {
+        height: 90vh;
+        @include mq(sm) {
+          height: auto;
+        }
+      }
+      .content__block-text {
+        order: 2;
+      }
+    }
+  }
+}

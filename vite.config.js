@@ -2,8 +2,8 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     build: {
-        outDir: 'assets',
-        assetsDir: 'assets',
+        outDir: 'script',
+        assetsDir: 'script',
             rollupOptions: {
                 output: {
                     entryFileNames: '[name].js',

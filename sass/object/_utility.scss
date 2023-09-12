@@ -1,0 +1,377 @@
+/*=======================================
+    COMMON
+=======================================*/
+#page {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.u-child {
+  &__headline {
+
+  }
+  &__headline-hero {
+    position: relative;
+    margin: auto 50px;
+    height: 650px;
+    @include mq(sp) {
+      margin: auto;
+      height: 500px;
+    }
+  }
+  &__headline-title {
+    position: absolute;
+    right: 130px;
+    bottom: 100px;
+    @include mq(sp) {
+      right: 20px;
+      bottom: 60px;
+    }
+    h1 {
+      color:$darktxt;
+      font-size: 70px;
+      letter-spacing: 5px;
+      text-align: center;
+      font-weight: 700;
+      font-family: $f__base;
+      float: right;
+      @include mq(sp) {
+        font-size: 42px;
+        &:after {width: 70%;}
+      }
+    }
+    position: relative;
+  }
+  &__description {
+    p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 2;
+      letter-spacing: 1px;
+      padding-left: 30px;
+      font-family: $f__accent;
+      @include mq(sp) {
+        text-align: left;
+        padding: 0 15px;
+        font-size: 14px;
+      }
+    }
+    .row {
+      width: 100%;
+    }
+  }
+}
+
+
+/*----------------------------
+  TEXT
+----------------------------*/
+.u-title {
+  &__s {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  &__m {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  &__l {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    @include mq(sp) {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+  }
+}
+.u-title{
+  &__s, &__m, &__l {
+    font-family: $f__accent;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 50%;;
+      right: 0;
+      left: 0;
+      bottom: -10px;
+      height: 2px;
+      background: $darktxt;
+    }
+  }
+}
+
+.u-align {
+  &__right {
+    text-align: right;
+  }
+  &__left {
+    text-align: left;
+  }
+  &__center {
+    text-align: center;
+  }
+}
+
+/*----------------------------
+  IMAGE
+----------------------------*/
+.u-img {
+  &__cover {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__bgimage {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &__bgcover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.4);
+  }
+}
+
+/*----------------------------
+  SPACER
+----------------------------*/
+.u-spacer {
+
+  &__s, &__m, &__l {
+    display: block;
+  }
+
+  &__s {
+    height: 100px;
+    @include mq(sp) {
+      height: 50px;
+    }
+  }
+  &__m {
+    height: 180px;
+    @include mq(sp) {
+      height: 90px;
+    }
+  }
+  &__l {
+    height: 240px;
+    @include mq(sp) {
+      height: 120px;
+    }
+  }
+
+}
+
+
+/*----------------------------
+  BUTTON
+----------------------------*/
+.u-more {
+  &__button {
+    background: #fff;
+    z-index: 1;
+    text-decoration: none;
+    color: $darktxt;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 20px 25px;
+    border-bottom: 1px solid $darktxt;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+    transition: .3s;
+    &:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      right: 0;
+      left: auto;
+      bottom: 0;
+      height: 2px;
+      background: $darktxt;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $darktxt;
+      cursor: pointer;
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  &__nav {
+    text-decoration: none;
+    color: $darktxt;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+    transition: .3s;
+    &:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      right: 0;
+      left: auto;
+      bottom: 0;
+      height: 2px;
+      background: $darktxt;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $darktxt;
+      cursor: pointer;
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+/*----------------------------
+  SECTION
+----------------------------*/
+.u-section {
+  &__image {
+    img {
+      height: 550px;
+      object-fit: cover;
+      @include mq(sp) {
+        height: 250px;
+      }
+    }
+    height: 550px;
+    @include mq(sp) {
+      height: 250px;
+    }
+  }
+  &__text {
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      line-height: 1.5;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
+      @include mq(sp) {
+        margin-bottom: 30px;
+      }
+    }
+    a {
+      float: right;
+      margin-right: 50px;
+      @include mq(sp) {
+        margin: auto;
+      }
+    }
+  }
+  &__text-left {
+
+  }
+}
+
+/*----------------------------
+  TABLE
+----------------------------*/
+.u-table {
+  &__cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+// Config
+$hamburger__height: 30px;
+$hamburger__width: 30px;
+$hamburger__layer__height: 2px;
+$hamburger__colour: #000000;
+
+.menu {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+// Structure
+.hamburger {
+  display: block;
+  position: absolute;
+  width: $hamburger__height;
+  height: $hamburger__width;
+  z-index: 2;
+  top: 18px;
+  right: 30px;
+}
+
+.hamburger__inner {
+  display: block;
+  width: $hamburger__width;
+  height: $hamburger__layer__height;
+  margin-top: $hamburger__layer__height * 4;
+  background: $hamburger__colour;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  &::before, &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: $hamburger__width;
+    height: $hamburger__layer__height;
+    background: $hamburger__colour;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    top: $hamburger__layer__height * 8;
+  }
+}
+
+// Clicked State
+.hamburger--open {
+  .hamburger__inner {
+    background: none;
+
+    &::before, &::after {
+      top: $hamburger__layer__height * 2;
+    }
+    &::before {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &::after {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+/*********************************************************
+	99.	END GLOBAL.SCSS
+**********************************************************/
