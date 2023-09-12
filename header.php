@@ -15,13 +15,11 @@ $site = array(
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<?php wp_head(); ?>
-	
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<?php wp_head(); ?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/luxy.js"></script>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/script/index.css" >
@@ -44,35 +42,34 @@ $site = array(
 			</div><!-- .masthead__logo -->
 			<div class="masthead__work">
 				<a href="<?php echo home_url('/work'); ?>">
-          <h3 class="masthead__work-title">View All Works</h3>
+					<h3 class="masthead__work-title">View All Works</h3>
 				</a>
 				<a href="<?php echo home_url('/work'); ?>">
-          <div class="masthead__work-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 16 16" class="">
-            <rect width="2" height="2"></rect>
-            <rect x="5" width="2" height="2"></rect>
-            <rect x="10" width="2" height="2"></rect>
-            <rect y="5" width="2" height="2"></rect>
-            <rect x="5" y="5" width="2" height="2"></rect>
-            <rect x="10" y="5" width="2" height="2"></rect>
-            <rect y="10" width="2" height="2"></rect>
-            <rect x="5" y="10" width="2" height="2"></rect>
-            <rect x="10" y="10" width="2" height="2"></rect>
-            </svg>
-          </div>
-					
+					<div class="masthead__work-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 16 16" class="">
+						<rect width="2" height="2"></rect>
+						<rect x="5" width="2" height="2"></rect>
+						<rect x="10" width="2" height="2"></rect>
+						<rect y="5" width="2" height="2"></rect>
+						<rect x="5" y="5" width="2" height="2"></rect>
+						<rect x="10" y="5" width="2" height="2"></rect>
+						<rect y="10" width="2" height="2"></rect>
+						<rect x="5" y="10" width="2" height="2"></rect>
+						<rect x="10" y="10" width="2" height="2"></rect>
+						</svg>
+					</div>
 				</a>
 			</div><!-- .masthead__work -->
 			<div class="masthead__navigation">
-        <ul>
-          <li>
-            <a href="<?php echo home_url('/about'); ?>">About</a>
-          </li>
-          <li>
-            <a href="<?php echo home_url('/contact'); ?>">Contact</a>
-          </li>
-        </ul>
-      </div><!-- .masthead__navigation -->
+				<ul>
+					<li>
+						<a href="<?php echo home_url('/about'); ?>">About</a>
+					</li>
+					<li>
+						<a href="<?php echo home_url('/contact'); ?>">Contact</a>
+					</li>
+				</ul>
+			</div><!-- .masthead__navigation -->
 		</div>
 	</div><!-- #masthead -->
 	<?php //get_template_part( 'template-parts/header/site-header' ); ?>

@@ -13,7 +13,6 @@
  */
 get_header();
 ?>
-<div id="canvas"></div>
 <main id="frontpage" class="frontpage">
 	<div class="horizontal projects">
 		<section id="hero" class="horizontal__block hero">
@@ -136,41 +135,6 @@ get_header();
 	</div>
 
 </main>
-<script type="text/javascript">
 
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 1000 );
-var renderer = new THREE.WebGLRenderer();
-renderer.setClearColor(new THREE.Color(0xffffff));
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.getElementById("canvas").appendChild(renderer.domElement);
-camera.position.set(0,0,50);
-
-var loader = new THREE.FontLoader();
-var tekstMesh;
-
-loader.load( 'https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function ( font ) {
-	var tekstje = new THREE.TextGeometry( 'OTATA', {
-		font: font,
-		size: 10,
-		height: 1,
-	} );
-	tekstje.center();
-	var materiaal = new THREE.MeshBasicMaterial( { color: 0xdddddd,wireframe: true } );
-	tekstMesh = new THREE.Mesh( tekstje, materiaal );
-	scene.add( tekstMesh );
-	tekstMesh.position.set(0, 0, 0);
-} );
-
-function animate() {
-	requestAnimationFrame( animate );
-	renderer.render( scene, camera );
-		tekstMesh.rotation.x += 0.005;
-		tekstMesh.rotation.y += 0.005;
-}
-animate();
-
-
-</script>
 <?php
 get_footer();
