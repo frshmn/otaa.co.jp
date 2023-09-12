@@ -20,8 +20,6 @@ $site = array(
 	<?php wp_head(); ?>
 	
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<!-- Common Source -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/global.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
