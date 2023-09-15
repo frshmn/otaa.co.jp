@@ -15,12 +15,6 @@ get_header();
 ?>
 <main id="frontpage" class="frontpage">
 	<div class="horizontal projects">
-		<section id="hero" class="horizontal__block hero">
-			<div class="move hero__inner">
-				<h1>OTATA</h1>
-			</div>
-
-		</section>
 		<section id="project-1" class="horizontal__block project project_1">
 			<div class="project__images">
 				<div class="project__images-grid">

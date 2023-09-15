@@ -19,9 +19,6 @@ $site = array(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <?php wp_head(); ?>
 
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/luxy.js"></script>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/script/index.css" >
 </head>
 
