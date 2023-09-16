@@ -1,1 +1,149 @@
 @use "../base" as *;
+
+.home .horizontal {
+    width: 100vw;
+    height: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform-origin: right top;
+    transform: rotate(-90deg) translate3d(0,-100vw,0);
+    @include respond-from(sm) {
+        height: 100vh;
+        transform-origin: none;
+        transform: none;
+    }
+    > * {
+        transform-origin: left top;
+        transform: rotate(90deg) translate3d(0,-100vw,0);
+        @include respond-from(sm) {
+            transform: none;
+        }
+    }
+
+    &__block {
+        width: 100vw;
+        height: 100vw;
+        position: relative;
+        @include respond-from(sm) {
+            height: auto;
+            padding: 40px 0;
+        }
+
+        .end {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                position: relative;
+                display: block;
+                font-size: 20px;
+                font-weight: 900;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                padding-bottom: 30px;
+                transition: .5s ease;
+                &::after {
+                    content: '';
+                    height: 2px;
+                    width: 40%;
+                    background-color: $base-color;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    transition: .5s ease;
+                }
+                &:hover {
+                    letter-spacing: 1px;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// End .home .horizontal 
+
+.home .work {
+    &s {
+        width: 100vw;
+    }
+    position: relative;
+    background-color: #ffffff;
+    &.active {
+        .project__images-image {
+            transform: scale(1);
+        }
+    }
+    &::after {
+        content: "";
+        width: 1px;
+        height: calc(100vh - 90px);
+        background-color: #aaa;
+        position: absolute;
+        top: 25%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.work-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-full__image {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    img {
+        width: 100%;
+    }
+}
+
+.work-full__content {
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        width: 100%;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    ul li {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+.work-full__label {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .number {
+        display: flex;
+        align-items: center;
+        height: 80%;
+        padding-right: 5px;
+        border-right: 1px solid #999999;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
