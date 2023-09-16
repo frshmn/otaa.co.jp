@@ -9,17 +9,17 @@ $site = array(
 	'tel' => '080-3657-5345',
 	'mail' => 'info@otaa.co.jp',
 	'name' => '太田 雄太郎',
+	'company' => '合同会社太太建築設計事務所',
 	'slug' => 'OTAA',
 );
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<?php wp_head(); ?>
-
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/script/index.css" >
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<?php wp_head(); ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/script/index.css" >
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,7 +33,7 @@ $site = array(
 				<?php if( has_custom_logo() ) : ?>
 					<?php the_custom_logo(); ?>
 				<?php else : ?>
-					<h2>太　太 建築設計事務所</h2>
+					<h2><?php echo $site['company']; ?></h2>
 				<?php endif; ?>
 				</a>
 			</div><!-- .masthead__logo -->
