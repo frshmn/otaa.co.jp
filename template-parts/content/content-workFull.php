@@ -11,6 +11,7 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 		<?php if( has_post_thumbnail() ) : ?>
 		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 		<?php endif; ?>
+		<!-- slideshow -->
 	</div><!-- .work-full__image -->
 
 	<div class="work-full__content">
