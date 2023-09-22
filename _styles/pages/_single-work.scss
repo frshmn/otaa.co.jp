@@ -1,1 +1,93 @@
 @use '../base' as *;
+.work {
+    position: relative;
+    color: $base-color;
+}
+
+.work__hero {
+    height: 70vh;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.work__header {
+    background-color: $light-color;
+    padding: 30px 0;
+    h1 {
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    ul {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+}
+.work__header-inner {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.work__content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.work__content-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    p {
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    table {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+    table tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    tr {
+        display: flex;
+        border-bottom: 1px solid $gray-color;
+    }
+    td {
+        width: 50%;
+        &:nth-of-type(2) {
+            text-align: right;
+        }
+    }
+}
+
+.work__footer {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}

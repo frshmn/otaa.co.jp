@@ -12,7 +12,7 @@
 
 <div id="colophon" class="colophon">
 	<div class="copyright">
-	<small>2023 &copy; OTAA LLC All Right Reserved.</small>
+		<small>2023 &copy; OTAA LLC All Right Reserved.</small>
 	</div>
 </div><!-- #colophon -->
 

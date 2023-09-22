@@ -19,7 +19,7 @@
         target="_blank"
         rel="nofollow noopener"
     >
-        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-x-twitter"></i>
     </a>
     <a
         href="https://social-plugins.line.me/lineit/share?url=<?php echo get_the_permalink(); ?>"

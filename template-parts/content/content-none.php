@@ -10,6 +10,7 @@
 		<?php if ( is_search() ) : ?>
 
 			<h1 class="page-title">
+				test
 				<?php
 				printf(
 					/* translators: %s: Search term. */

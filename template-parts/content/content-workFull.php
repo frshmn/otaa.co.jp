@@ -43,10 +43,10 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 			</li>
 			<?php endforeach; ?>
 		</ul>
+		<?php endif; ?>
 		<div class="link">
 			<a href="<?php the_permalink(); ?>">view detail</a>
 		</div>
-		<?php endif; ?>
 	</div><!-- .work-full__content -->
 
 </article><!-- #work-<?php the_ID(); ?> -->

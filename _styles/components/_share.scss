@@ -17,16 +17,29 @@
     text-align: center;
     padding: 10px;
     font-size: 20px;
+    transition: .5s ease;
     &.facebook {
-        background-color: #3C5D96;
+        background-color: #999;
+        &:hover {
+            background-color: #3C5D96;
+        }
     }
     &.twitter {
-        background-color: #55acee;
+        background-color: #888;
+        &:hover {
+            background-color: #000;
+        }
     }
     &.line {
-        background-color: #00C34D;
+        background-color: #999;
+        &:hover {
+            background-color: #00C34D;
+        }
     }
     &.pinterest {
-        background-color: #bc3f36;
+        background-color: #888;
+        &:hover {
+            background-color: #bc3f36;
+        }
     }
 }
