@@ -8,6 +8,12 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 
 <article id="work-<?php the_ID(); ?>" class="work-full horizontal__block">
 	<div class="work-full__image">
+		<p>
+			<span>
+			<?php echo '0' . $args['number']; ?>
+			</span>
+			/ 04
+		</p>
 		<?php if( has_post_thumbnail() ) : ?>
 		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 		<?php endif; ?>
@@ -16,7 +22,7 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 
 	<div class="work-full__content">
 		<h2>
-		<?php the_title(); ?>
+			<?php the_title(); ?>
 		</h2>
 		<?php if( !empty($categories) ): ?>
 		<ul>
@@ -37,12 +43,10 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 			</li>
 			<?php endforeach; ?>
 		</ul>
+		<div class="link">
+			<a href="<?php the_permalink(); ?>">view detail</a>
+		</div>
 		<?php endif; ?>
 	</div><!-- .work-full__content -->
 
-	<div class="work-full__label">
-		<div class="number">
-			<p>01</p>
-		</div>
-	</div><!-- .work-full__label -->
 </article><!-- #work-<?php the_ID(); ?> -->

@@ -30,9 +30,14 @@ get_header();
 		$work_query = new WP_Query($args);
 
 		if($work_query->have_posts()) {
+			$current_post = array(
+				'number' => 0,
+			);
+
 			while($work_query->have_posts()) {
 				$work_query->the_post();
-				get_template_part('template-parts/content/content', 'workFull');
+				$current_post['number']++;
+				get_template_part('template-parts/content/content', 'workFull', $current_post);
 			}
 		}
 		?>
