@@ -43,3 +43,38 @@
         }
     }
 }
+
+.c-shareSmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-shareSmall__button {
+    display: block;
+    color: $gray-color;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: .5s ease;
+    &.facebook {
+        &:hover {
+            color: #3C5D96;
+        }
+    }
+    &.twitter {
+        &:hover {
+            color: #000;
+        }
+    }
+    &.line {
+        &:hover {
+            color: #00C34D;
+        }
+    }
+    &.pinterest {
+        &:hover {
+            color: #bc3f36;
+        }
+    }
+}

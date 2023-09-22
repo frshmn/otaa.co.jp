@@ -23,6 +23,9 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 			<h1>
 				<?php the_title(); ?>
 			</h1>
+			<div class="work__header-content">
+
+			
 			<?php if( !empty($categories) ): ?>
 			<ul>
 				<?php foreach( $categories as $category ): ?>
@@ -40,6 +43,8 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 				<?php endforeach; ?>
 			</ul>
 			<?php endif; ?>
+			<?php get_template_part( 'template-parts/component/component', 'shareSmall' ); ?>
+			</div>
 		</div>
 	</header>
 	<?php
