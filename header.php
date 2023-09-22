@@ -10,6 +10,7 @@ $site = array(
 	'mail' => 'info@otaa.co.jp',
 	'name' => '太田 雄太郎',
 	'company' => '合同会社太太建築設計事務所',
+	'company_slug' => '太太',
 	'slug' => 'OTAA',
 );
 ?>
@@ -33,7 +34,7 @@ $site = array(
 				<?php if( has_custom_logo() ) : ?>
 					<?php the_custom_logo(); ?>
 				<?php else : ?>
-					<h2><?php echo $site['company']; ?></h2>
+					<h2><?php echo $site['company_slug']; ?></h2>
 				<?php endif; ?>
 				</a>
 			</div><!-- .masthead__logo -->

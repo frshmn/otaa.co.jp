@@ -23,7 +23,9 @@
     max-width: 70px;
   }
   h2 {
-    font-size: 14px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 13px;
   }
 }
 //  .masthead__logo =============================
@@ -34,6 +36,7 @@
   z-index: 3;
   cursor: pointer;
   will-change: opacity;
+  text-transform: uppercase;
   a:nth-child(1) {
     @include respond-from(sm) {
       display: none;
@@ -51,7 +54,7 @@
 
 .masthead__work-title {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -79,11 +82,13 @@
 .masthead__navigation {
   ul {
     display: flex;
+    gap: 15px;
   }
   ul li {
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .7px;
     @include respond-from(sm) {
       padding: 0;
       padding-left: 15px;
