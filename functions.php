@@ -100,7 +100,7 @@ function create_post_type() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', ),
         'show_in_rest'       => true,
 	);
 	register_post_type( 'work', $work_args );
@@ -124,7 +124,7 @@ function create_post_type() {
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
-        'rewrite'           => array( 'slug' => 'work/category' )
+        'rewrite'           => true,
 	);
 	register_taxonomy( 'work_category', 'work', $work_taxonomy_args );
 }
