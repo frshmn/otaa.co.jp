@@ -2,13 +2,12 @@
 /**
  * Displays the headline
  */
-if(!$args['title']):
-
-else :
 ?>
 <header class="c-headline">
+    <?php if($args['title']) { ?>
 	<h2><?php echo $args['title']; ?></h2>
-    <p><?php echo $args['excerpt']; ?></p>
+    <?php } ?>
+    <?php if($args['sub_title']) { ?>
+    <p><?php echo $args['sub_title']; ?></p>
+    <?php } ?>
 </header>
-<?php
-endif;

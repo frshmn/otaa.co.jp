@@ -43,7 +43,7 @@ get_header();
 		?>
 		<div class="horizontal__block">
 			<div class="end">
-				<a href="<?php echo home_url('works'); ?>">
+				<a href="<?php echo home_url('work'); ?>">
 					View All works
 				</a>
 			</div>
