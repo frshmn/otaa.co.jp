@@ -27,9 +27,6 @@ if( $terms && ! is_wp_error($terms) ) {
 			</div>
 			<div class="l-grid__content-title">
 				<h2><?php echo the_title(); ?></h2>
-				<p>
-					Locations: <span><?php echo $option; ?></span>
-				</p>
 			</div>
 		</div>
 	</a>
