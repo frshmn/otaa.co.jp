@@ -19,7 +19,7 @@ get_header();
 			<?php endif; ?>
 		</div>
 		<div class="about__hero-title">
-			<h2>YUTARO OHTA</h2>
+			<h2>太田 雄太郎</h2>
 		</div>
 	</div>
 	<div class="about__content">

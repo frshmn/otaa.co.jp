@@ -153,3 +153,16 @@ function taxonomy_orderby_description( $orderby, $args ) {
     return $orderby;
 }
 add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+
+function pageslug_class($classes = '') {
+    if (is_page()) {
+        $page = get_post(get_the_ID());
+        $classes[] = 'page-' . $page->post_name;
+        if ($page->post_parent) {  // ページが子ページであったときの処理
+            $classes[] = get_page_uri($page->post_parent) . '-' . $page->post_name;
+        // 「親ページのスラッグ-子ページのスラッグ」という表示に調整
+        }
+    }
+    return $classes;
+}
+add_filter('body_class', 'pageslug_class');

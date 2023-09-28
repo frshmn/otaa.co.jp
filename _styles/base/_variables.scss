@@ -16,8 +16,9 @@ $large-font-size: 18px;
 
 /* Font family */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap');
 $sans-serif-font: 'M PLUS 1p', sans-serif;
-$serif-font: Georgia, 'Times New Roman', serif;
+$serif-font: 'Noto Serif JP', 'Times New Roman', serif;
 $monospace-font: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 /* Spacing (margin and padding)*/
