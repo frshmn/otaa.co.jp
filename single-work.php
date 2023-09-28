@@ -57,7 +57,7 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 	?>
 
 	<footer class="work__footer">
-		<?php get_template_part( 'template-parts/component/component', 'share' ); ?>
+	<?php get_template_part( 'template-parts/component/component', 'shareSmall' ); ?>
 	</foot>
 </main>
 <?php
