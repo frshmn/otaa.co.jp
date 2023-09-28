@@ -27,6 +27,7 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 		<?php if( !empty($categories) ): ?>
 		<ul>
 			<?php foreach( $categories as $category ): ?>
+				<?php if(!($category->slug == 'pr')) : ?>
 			<li>
 				<?php
 				$parent = get_term($category->parent);
@@ -41,6 +42,7 @@ $categories = get_the_terms( get_the_ID(), 'work_category');
 				}
 				?>
 			</li>
+				<?php endif; ?>
 			<?php endforeach; ?>
 		</ul>
 		<?php endif; ?>

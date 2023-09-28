@@ -19,13 +19,13 @@ get_header();
 		$args = array(
 			'post_type' => 'work',
 			'posts_per_page' => 4,
-			// 'tax_query' => array(
-			// 	array(
-			// 		'taxonomy' => 'work_category',
-			// 		'field' => 'slug',
-			// 		'terms' => 'pr',
-			// 	)
-			// )
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'work_category',
+					'field' => 'slug',
+					'terms' => 'pr',
+				)
+			)
 		);
 		$work_query = new WP_Query($args);
 
