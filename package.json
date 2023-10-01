@@ -15,6 +15,7 @@
     "destyle.css": "^4.0.0",
     "luminous-lightbox": "^2.4.0",
     "sass": "^1.63.6",
-    "swiper": "^9.4.1"
+    "swiper": "^9.4.1",
+    "vivus": "^0.4.6"
   }
 }
