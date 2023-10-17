@@ -7,12 +7,10 @@ menuTl.to('.js-menuLink', {
 	duration: 0.5,
 });
 
-menuTl.to('.js-menuNavigation', {
-	width: '0',
-	opacity: '0'
+menuTl.from('.js-menuNavigation', {
+	width: '100%',
+	opacity: '1',
 })
-
-menuTl.restart();
 
 burger.addEventListener('click', () => {
 	menuTl.reversed(!menuTl.reversed());
