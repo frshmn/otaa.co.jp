@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "destyle.css": "^4.0.0",
+    "gsap": "^3.12.2",
     "luminous-lightbox": "^2.4.0",
     "sass": "^1.63.6",
     "swiper": "^9.4.1",

@@ -58,16 +58,23 @@ $site = array(
 					</div>
 				</a>
 			</div><!-- .masthead__work -->
-			<div class="masthead__navigation">
+			<div class="masthead__navigation js-menuNavigation">
 				<ul>
 					<li>
-						<a href="<?php echo home_url('/about'); ?>">About</a>
+						<a class="js-menuLink" href="<?php echo home_url('/about'); ?>">About</a>
 					</li>
 					<li>
-						<a href="<?php echo home_url('/contact'); ?>">Contact</a>
+						<a class="js-menuLink" href="<?php echo home_url('/contact'); ?>">Contact</a>
 					</li>
 				</ul>
 			</div><!-- .masthead__navigation -->
+			<div class="masthead__burger">
+				<div id="hamburger" class="hamburger">
+					<span class="hamburger__top"></span>
+					<span class="hamburger__middle"></span>
+					<span class="hamburger__bottom"></span>
+				</div>
+			</div>
 		</div>
 	</div><!-- #masthead -->
 	<?php //get_template_part( 'template-parts/header/site-header' ); ?>
