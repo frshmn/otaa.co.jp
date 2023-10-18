@@ -25,8 +25,9 @@
         height: 100vw;
         position: relative;
         @include respond-from(sm) {
-            height: auto;
+            height: 100vh;
             padding: 40px 0;
+            flex-direction: column;
         }
 
         .end {
@@ -93,6 +94,10 @@
 .work-full {
     display: flex;
     justify-content: space-around;
+    @include respond-from(sm) {
+        justify-content: center;
+        gap: 15px;
+    }
 }
 
 .work-full__image {
@@ -104,6 +109,11 @@
     justify-content: center;
     align-items: center;
     margin-left: 30px;
+    @include respond-from(sm) {
+        width: 100%;
+        height: auto;
+        margin: inherit;
+    }
     img {
         width: 100%;
     }
@@ -127,6 +137,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include respond-from(sm) {
+        width: 100%;
+        height: auto;
+    }
     h2 {
         width: 100%;
         font-size: 36px;

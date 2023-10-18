@@ -8,6 +8,9 @@
   max-width: 1600px;
   margin: auto;
   margin-top: 30px;
+  @include respond-from(sm) {
+    margin-left: 15px;
+  }
 }
 
 
@@ -30,6 +33,10 @@
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 13px;
+    @include respond-from(sm) {
+      font-size: 18px;
+      letter-spacing: 10px;
+    }
   }
 }
 //  .masthead__logo =============================
@@ -108,11 +115,18 @@
   left: 0;
   width: 0%;
   opacity: 0;
+  visibility: hidden;
   background-color: rgba($base-color, 1);
   z-index: 900;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ul {
     display: flex;
+    flex-direction: column;
     gap: 15px;
+    color: white;
   }
   ul li {
     font-size: 14px;

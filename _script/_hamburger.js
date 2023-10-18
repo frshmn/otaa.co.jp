@@ -10,6 +10,7 @@ menuTl.to('.js-menuLink', {
 menuTl.from('.js-menuNavigation', {
 	width: '100%',
 	opacity: '1',
+	visibility: 'visible'
 })
 
 burger.addEventListener('click', () => {
