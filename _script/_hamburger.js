@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 const burger = document.querySelector('#hamburger');
 const menuTl = gsap.timeline();
 menuTl.to('.js-menuLink', {
-	translateY: '100%',
+	translateY: '115%',
 	duration: 0.5,
 });
 

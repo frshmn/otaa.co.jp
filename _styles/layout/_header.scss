@@ -127,16 +127,17 @@
     flex-direction: column;
     gap: 15px;
     color: white;
+    transition-delay: 1s;
   }
   ul li {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: .7px;
+    letter-spacing: 3px;
+    overflow-x: hidden;
+    padding: 10px 15px;
+    border-bottom: 1px solid;
     @include respond-from(sm) {
-      padding: 0;
-      padding-left: 15px;
-      font-weight: 400;
     }
   }
 }
