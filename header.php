@@ -61,10 +61,10 @@ $site = array(
 			<div class="masthead__navigation js-menuNavigation">
 				<ul>
 					<li>
-						<a class="js-menuLink" href="<?php echo home_url('/about'); ?>">About</a>
+						<a class="js-menuLink" href="<?php echo home_url('/about'); ?>">About<i class="fa-thin fa-arrow-up"></i></a>
 					</li>
 					<li>
-						<a class="js-menuLink" href="<?php echo home_url('/contact'); ?>">Contact</a>
+						<a class="js-menuLink" href="<?php echo home_url('/contact'); ?>">Contact<i class="fa-thin fa-arrow-up"></i></a>
 					</li>
 				</ul>
 			</div><!-- .masthead__navigation -->
