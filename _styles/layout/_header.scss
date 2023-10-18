@@ -116,7 +116,7 @@
   width: 0%;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba($base-color, 1);
+  background-color: rgba($gray-color, 1);
   z-index: 900;
 
   display: flex;
@@ -127,7 +127,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    color: white;
+    color: $base-color;
     transition-delay: 1s;
   }
   ul li {
