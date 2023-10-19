@@ -123,12 +123,15 @@
   justify-content: center;
   align-items: center;
   ul {
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
     color: $base-color;
     transition-delay: 1s;
+    @include respond-from(sm) {
+      width: 80%;
+    }
   }
   ul li {
     font-size: 32px;
@@ -156,13 +159,17 @@
 .masthead__burger {
   width: 50px;
   height: 40px;
-  position: fixed;
-  top: 20px;
+  position: relative;
+  top: 0;
   right: 0;
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
+  @include respond-from(sm) {
+    position: fixed;
+    top: 20px;
+  }
 }
 .hamburger {
   display: block;
